@@ -3,6 +3,10 @@
    ========================================================================== */
 
 /* Layout Shell */
+.bg {
+  background-color: green;
+}
+
 .app-container {
   display: flex;
   min-height: 100vh;
@@ -254,9 +258,20 @@
 }
 
 @keyframes pulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(59, 130, 246, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
 }
 
 .header-icon-btn {
@@ -457,9 +472,17 @@
   gap: 0.2rem;
 }
 
-.stat-change.positive { color: var(--accent-emerald); }
-.stat-change.negative { color: var(--accent-rose); }
-.stat-change.neutral { color: var(--text-secondary); }
+.stat-change.positive {
+  color: var(--accent-emerald);
+}
+
+.stat-change.negative {
+  color: var(--accent-rose);
+}
+
+.stat-change.neutral {
+  color: var(--text-secondary);
+}
 
 .stat-subtitle {
   color: var(--text-muted);
@@ -475,10 +498,25 @@
   flex-shrink: 0;
 }
 
-.stat-icon-blue { background: #eff6ff; color: #3b82f6; }
-.stat-icon-emerald { background: #ecfdf5; color: #10b981; }
-.stat-icon-purple { background: #f5f3ff; color: #8b5cf6; }
-.stat-icon-amber { background: #fffbeb; color: #f59e0b; }
+.stat-icon-blue {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+
+.stat-icon-emerald {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.stat-icon-purple {
+  background: #f5f3ff;
+  color: #8b5cf6;
+}
+
+.stat-icon-amber {
+  background: #fffbeb;
+  color: #f59e0b;
+}
 
 /* ==========================================================================
    Dashboard Sections & Cards
@@ -596,9 +634,17 @@
   transition: width 0.4s ease;
 }
 
-.progress-fill.emerald { background-color: var(--accent-emerald); }
-.progress-fill.purple { background-color: var(--accent-purple); }
-.progress-fill.amber { background-color: var(--accent-amber); }
+.progress-fill.emerald {
+  background-color: var(--accent-emerald);
+}
+
+.progress-fill.purple {
+  background-color: var(--accent-purple);
+}
+
+.progress-fill.amber {
+  background-color: var(--accent-amber);
+}
 
 /* Activity Card / Item */
 .activity-list {
@@ -669,8 +715,13 @@
   border-radius: var(--radius-sm);
 }
 
-.schedule-card.purple { border-left-color: var(--accent-purple); }
-.schedule-card.emerald { border-left-color: var(--accent-emerald); }
+.schedule-card.purple {
+  border-left-color: var(--accent-purple);
+}
+
+.schedule-card.emerald {
+  border-left-color: var(--accent-emerald);
+}
 
 .schedule-time {
   font-size: 0.825rem;
@@ -743,9 +794,20 @@
   border-radius: 4px;
 }
 
-.priority-tag.high { background: #fee2e2; color: #ef4444; }
-.priority-tag.medium { background: #fef3c7; color: #d97706; }
-.priority-tag.low { background: #e0f2fe; color: #0284c7; }
+.priority-tag.high {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.priority-tag.medium {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.priority-tag.low {
+  background: #e0f2fe;
+  color: #0284c7;
+}
 
 /* ==========================================================================
    Analytics Charts & Visualizations
@@ -912,7 +974,8 @@
   margin-top: 0.2rem;
 }
 
-.setting-select, .setting-input {
+.setting-select,
+.setting-input {
   padding: 0.45rem 0.85rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
@@ -959,11 +1022,11 @@
   border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: var(--primary);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(20px);
 }
 
@@ -991,7 +1054,9 @@ input:checked + .slider:before {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .loading-text {

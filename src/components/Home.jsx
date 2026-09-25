@@ -65,6 +65,7 @@ export default function Home() {
 
   return (
     <div className="home-page">
+      <h1 className="sr-only bg">this website is with lazyloading</h1>
       <div className="page-header">
         <div>
           <h2 className="page-title">Welcome back, Alex! 👋</h2>
